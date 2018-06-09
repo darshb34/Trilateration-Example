@@ -58,8 +58,14 @@ def getlocation(xA,yA,zA,xB,yB,zB,xC,yC,zC):
     E-=B
     E-=D
     A=-A
-    E=E/float(C)
-    A=A/float(C)
+    try:
+        E=E/float(C)
+    except:
+        E = 0
+    try:
+        A=A/float(C)
+    except:
+        A = 0
     print "y1",A, E 
     
     
